@@ -1,0 +1,123 @@
+/* box model hack */
+*{
+   box-sizing: border-box;
+}
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+/*  Top section*/
+h1{
+  font-size:42px;
+  font-weight:bold;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+li{
+  color:#C0C0C0;
+  display:inline;
+  width: calc(100% /7);
+  float:left;
+  padding-bottom:50px;
+}
+.mainNav .fasfa-search{
+  position:relative;
+
+}
+.mainNav li span{
+  float: left;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.VBlogo{
+  height: 50px;
+  padding-right:40px;
+  margin-top:10px;
+}
+header{
+  height: 59px;
+  width: 101%;
+  border: 1px solid transparent;
+  background-color: rgb(51,51,51);
+  padding-left: 102px;
+  top: -8px;
+  left: -1%;
+  position: relative;
+}
+main{
+  height: 399px;
+  width: 102%;
+  border: 1px solid black;
+  background-image: url(https://venturebeat.com/wp-content/uploads/2017/01/Ellen-Pao.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: -1%;
+  top: -8px;
+}
+main .overlay{
+  border:1px solid black;
+  max-width: 600px;
+  padding:10px;
+  background-color:rgba(255,239,213,0.5);
+  background-size:auto;
+  position: absolute;
+  bottom:15px;
+  left:114px;
+}
+.overlay h1{
+  margin:0;
+}
+main .body{
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  left: 2px;
+  bottom: 0px;
+}
+/* Bottom Section */
+.picture img{
+  float: left;
+  width: 256px;
+  height: 197px;
+}
+.body + .picture{
+  display:inline-block;
+  overflow:auto;
+  float:left;
+}
+
+.body .words{
+  float:left;
+  width: 50%;
+  position:relative;
+}
+.words h3{
+  font-size:27px;
+  float: left;
+  width: 60%;
+  left: 11px;
+  bottom: 30px;
+  position: relative;
+}
+.byline{
+  font-size:small;
+  /* display:inline-block;
+  position:absolute; */
+  float: left;
+  left:11px;
+  position: relative;
+  top: -41px;
+}
+h3 span{
+  font-size:small;
+  position:absolute;
+}
+.words .byline{
+  color:#8ab4eb;
+}
+.words .byline span{
+  color:#000000;
+}
